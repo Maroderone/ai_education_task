@@ -55,10 +55,10 @@ def sidebar_input_features():
     st.sidebar.header('Параметры')
     gender = st.sidebar.selectbox("Пол", ("Мужской", "Женский"))
     age = st.sidebar.slider("Возраст", min_value=1, max_value=100, value=20, step=1)
-    customer_type = st.sidebar.selectbox("Вы ? клиент", ("Лояльный", "Нелояльный"))
+    customer_type = st.sidebar.selectbox("Вы ? клиент", ("Постоянный", "Непостоянный"))
     type_of_travel = st.sidebar.selectbox("Тип поездки", ("Бизнес поездка", "Персональная поездка"))
     passenger_class = st.sidebar.selectbox("Класс", ("Бизнес", "Эконом", "Эконом+"))
-    flight_distance = st.sidebar.number_input('Flight distance', min_value=1)
+    flight_distance = st.sidebar.number_input('Дистанция полета', min_value=1)
     departure_delay_in_minutes = st.sidebar.number_input('Задержка отправления в минутах', min_value=0)
     arrival_delay_in_minutes = st.sidebar.number_input('Задержка прибытия в минутах', min_value=0)
     inflight_wifi_service = st_star_rating('Wi-Fi', 5, 3)
@@ -80,8 +80,8 @@ def sidebar_input_features():
         "Женский": 0,
         "Бизнес поездка": 1,
         "Персональная поездка": 0,
-        "Лояльный": 1,
-        "Нелояльный": 0,
+        "Постоянный": 1,
+        "Непостоянный": 0,
         "Бизнес":0,
         "Эконом":1,
         "Эконом+": 2,
