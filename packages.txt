@@ -1,2 +1,4 @@
-joblib-dev
-st-star-rating-dev
+joblib
+st-star-rating
+pandas
+streamlit
