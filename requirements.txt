@@ -2,4 +2,4 @@ joblib
 st-star-rating
 pandas
 streamlit
-sklearn
+scikit-learn
