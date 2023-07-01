@@ -29,7 +29,7 @@ def show_main_page():
     st.set_page_config(
         layout="wide",
         initial_sidebar_state="auto",
-        page_title="Demo Titanic",
+        page_title="HP",
     )
 
     st.write(
@@ -55,26 +55,26 @@ def sidebar_input_features():
     st.sidebar.header('Параметры')
     gender = st.sidebar.selectbox("Пол", ("Мужской", "Женский"))
     age = st.sidebar.slider("Возраст", min_value=1, max_value=100, value=20, step=1)
-    customer_type = st.sidebar.selectbox("Класс", ("Лояльный", "Нелояльный"))
+    customer_type = st.sidebar.selectbox("Вы ? клиент", ("Лояльный", "Нелояльный"))
     type_of_travel = st.sidebar.selectbox("Тип поездки", ("Бизнес поездка", "Персональная поездка"))
     passenger_class = st.sidebar.selectbox("Класс", ("Бизнес", "Эконом", "Эконом+"))
     flight_distance = st.sidebar.number_input('Flight distance', min_value=1)
-    departure_delay_in_minutes = st.sidebar.number_input('Departure delay in minutes', min_value=0)
-    arrival_delay_in_minutes = st.sidebar.number_input('Arrival delay in minutes', min_value=0)
-    inflight_wifi_service = st_star_rating('Arrival delay in minutes', 5, 3)
-    departure_or_arrival_time_convenient = st_star_rating('Departure/Arrival time convenient', 5, 3)
-    ease_of_online_booking = st_star_rating('Ease of Online booking', 5, 3)
-    gate_location = st_star_rating('Gate location', 5, 3)
-    food_and_drink = st_star_rating('Food and drink', 5, 3)
-    online_boarding = st_star_rating('Online boarding', 5, 3)
-    seat_comfort = st_star_rating('Seat comfort', 5, 3)
-    inflight_entertainment = st_star_rating('Inflight entertainment', 5, 3)
-    on_board_service = st_star_rating('On-board service', 5, 3)
-    leg_room_service = st_star_rating('Leg room service', 5, 3)
-    baggage_handling = st_star_rating('Baggage handling', 5, 3)
-    checkin_service = st_star_rating('Checkin service', 5, 3)
-    inflight_service = st_star_rating('Inflight service', 5, 3)
-    cleanliness = st_star_rating('Cleanliness', 5, 3)
+    departure_delay_in_minutes = st.sidebar.number_input('Задержка отправления в минутах', min_value=0)
+    arrival_delay_in_minutes = st.sidebar.number_input('Задержка прибытия в минутах', min_value=0)
+    inflight_wifi_service = st_star_rating('Wi-Fi', 5, 3)
+    departure_or_arrival_time_convenient = st_star_rating('Удобство времени отправления/прибытия', 5, 3)
+    ease_of_online_booking = st_star_rating('Простота онлайн-бронирования', 5, 3)
+    gate_location = st_star_rating('Расположения выхода', 5, 3)
+    food_and_drink = st_star_rating('Еда и напитки', 5, 3)
+    online_boarding = st_star_rating('Выбора места в самолете', 5, 3)
+    seat_comfort = st_star_rating('Удобство сиденья', 5, 3)
+    inflight_entertainment = st_star_rating('Развлечения на борту', 5, 3)
+    on_board_service = st_star_rating('Обслуживание на борту', 5, 3)
+    leg_room_service = st_star_rating('Место для ног на борту', 5, 3)
+    baggage_handling = st_star_rating('Обращения с багажом', 5, 3)
+    checkin_service = st_star_rating('Регистрация', 5, 3)
+    inflight_service = st_star_rating('Обслуживание в полете', 5, 3)
+    cleanliness = st_star_rating('Чистота', 5, 3)
     translatetion = {
         "Мужской": 1,
         "Женский": 0,
