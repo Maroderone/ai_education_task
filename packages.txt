@@ -1,1 +1,2 @@
 joblib
+streamlit_star_rating
